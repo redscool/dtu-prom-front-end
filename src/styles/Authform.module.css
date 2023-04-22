@@ -1,0 +1,70 @@
+input[type="radio"] {
+  border: 0px;
+  width: 100%;
+  height: 3vh;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.form {
+  width: 60vw;
+  height: 80vh;
+  margin: auto;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.emailContainer,
+.passwordContainer,
+.nameContainer,
+.ageContainer,
+.interestsContainer,
+.placedInContainer,
+.livesInContainer {
+  margin: 2vh auto;
+}
+
+.genderContainer {
+  margin: 2vh auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.signupButton {
+  display: flex;
+  margin: 2vh auto;
+  height: 6vh;
+  width: 8vw;
+  background-color: yellow;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+.signupButton > p {
+  margin: auto;
+}
+
+.male {
+  display: flex;
+  flex-direction: row;
+  margin: 2vh;
+  width: 6vw;
+  height: 6vh;
+}
+
+.forgetPasswordButton {
+  display: flex;
+  margin: 2vh auto;
+  height: 6vh;
+  width: 12vw;
+  background-color: black;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+.forgetPasswordButton > p {
+  color: white;
+  margin: auto;
+}

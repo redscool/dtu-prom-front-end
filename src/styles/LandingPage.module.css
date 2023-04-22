@@ -1,0 +1,37 @@
+.signup {
+  background-color: yellow;
+  display: flex;
+  width: 8vw;
+  height: 6vh;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+.signup > p {
+  margin: auto;
+}
+
+.signup {
+  margin: 1vh 0;
+  background-color: yellow;
+  display: flex;
+  width: 8vw;
+  height: 6vh;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+.signup > p {
+  margin: auto;
+}
+.login {
+  margin: 1vh 0;
+  background-color: black;
+  display: flex;
+  width: 8vw;
+  height: 6vh;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+.login > p {
+  color: white;
+  margin: auto;
+}

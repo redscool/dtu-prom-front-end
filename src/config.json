@@ -1,0 +1,4 @@
+{
+    "AUTH_SERVER": "http://localhost:5000",
+    "DATA_SERVER": "http://localhost:5002"
+}
