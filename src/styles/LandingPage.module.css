@@ -1,4 +1,10 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
 .signup {
+  margin: 10vh auto;
   background-color: yellow;
   display: flex;
   width: 8vw;
@@ -11,7 +17,7 @@
 }
 
 .signup {
-  margin: 1vh 0;
+  margin: 1vh auto;
   background-color: yellow;
   display: flex;
   width: 8vw;
@@ -23,7 +29,7 @@
   margin: auto;
 }
 .login {
-  margin: 1vh 0;
+  margin: 1vh auto;
   background-color: black;
   display: flex;
   width: 8vw;
@@ -33,5 +39,25 @@
 }
 .login > p {
   color: white;
+  margin: auto;
+}
+
+.centralWidget {
+  width: 50vw;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+.welcomeHeading {
+  margin: 10vh auto;
+  display: flex;
+  width: 50vw;
+  height: 20vh;
+  /* border: 1px solid red; */
+}
+.welcomeHeading > H1 {
   margin: auto;
 }

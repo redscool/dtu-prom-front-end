@@ -1,0 +1,102 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.container {
+  margin: auto;
+  width: 60vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+.imageUploadContainer {
+  /* border: 1px solid red; */
+  margin: 2vh auto;
+}
+
+.uploadButton {
+  display: flex;
+  background-color: black;
+  border: 2px solid black;
+  margin: 1vh auto;
+  height: 6vh;
+  width: 8vw;
+  cursor: pointer;
+}
+
+.uploadButton > p {
+  margin: auto;
+  font-weight: 500;
+  color: yellow;
+}
+
+.displayImage {
+  width: 10vw;
+}
+
+.uploadButton:hover {
+  background-color: yellow;
+  border: 2px solid black;
+}
+.uploadButton:hover > p {
+  color: black;
+}
+.form {
+  display: flex;
+  width: 60vw;
+  margin: 5vh 0;
+}
+
+.leftContainer {
+  width: 25vw;
+  margin: 1vh auto;
+  /* border: 1px solid red; */
+}
+
+.rightContainer {
+  width: 25vw;
+  margin: 1vh auto;
+  /* border: 1px solid red; */
+}
+
+.fieldContainer {
+  /* border: 1px solid green; */
+  margin: 3vh auto;
+  display: flex;
+}
+
+.fieldContainer > label {
+  margin: 0 auto 0 0;
+}
+.fieldContainer > input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 18vw;
+  border-bottom: 2px solid black;
+}
+
+.updateButton {
+  display: flex;
+  margin: 2vh auto;
+  background-color: yellow;
+  width: 8vw;
+  height: 6vh;
+  border: 2px solid yellow;
+  cursor: pointer;
+}
+
+.updateButton > p {
+  margin: auto;
+}
+
+.updateButton:hover > p {
+  font-weight: 500;
+}
+.updateButton:hover {
+  border: 2px solid black;
+  /* background: white; */
+}

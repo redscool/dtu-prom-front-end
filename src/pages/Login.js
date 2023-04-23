@@ -14,7 +14,17 @@ export default function Login() {
       "post",
       "/login",
       { email, password },
-      console.log,
+      ({ data }) => {
+        const accessToken = data.accessToken;
+
+        localStorage.setItem("accessToken", accessToken);
+
+        if (data.regComplete) {
+          navigate("/profiles");
+        } else {
+          navigate("/updateProfile");
+        }
+      },
       console.log
     );
   };

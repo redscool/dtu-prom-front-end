@@ -13,9 +13,11 @@ export default function VerifyEmail() {
       "post",
       "/verify",
       { token },
-      (res) => {
+      ({ data }) => {
+        const accessToken = data.accessToken;
+        localStorage.setItem("accessToken", accessToken);
+
         navigate("/updateprofile");
-        console.log(res.data);
       },
       console.log
     );

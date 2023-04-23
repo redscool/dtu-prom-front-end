@@ -18,9 +18,11 @@ export default function ResetPassword() {
       "post",
       "/resetpassword",
       { token, password },
-      (res) => {
+      ({ data }) => {
         setLoading(false);
-        console.log(res.data);
+
+        localStorage.removeItem("accessToken");
+        console.log(data);
       },
       console.log
     );

@@ -8,6 +8,7 @@ import VerifyEmail from "./pages/VerifyEmail";
 import Login from "./pages/Login";
 import ForgetPassword from "./pages/ForgetPassword";
 import UpdateProfile from "./pages/UpdateProfile";
+import ProfilePage from "./pages/ProfilePage";
 import Test from "./pages/Test";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Route exact path="/verifyemail/:token" element={<VerifyEmail />} />
         <Route exact path="/resetpassword/:token" element={<ResetPassword />} />
         <Route exact path="/updateprofile" element={<UpdateProfile />} />
+        <Route exact path="/profiles" element={<ProfilePage />} />
         <Route exact path="/test" element={<Test />} />
         <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
