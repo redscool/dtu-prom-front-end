@@ -21,9 +21,12 @@ export default function ProfilePage() {
   }, []);
   return (
     <div className={styles.page}>
-      {profiles.map((profile) => {
-        return <ProfileTab profile={profile} />;
-      })}
+      <h1>Profiles You May Like</h1>
+      <div className={styles.profileContainer}>
+        {profiles.map((profile) => {
+          return <ProfileTab profile={profile} />;
+        })}
+      </div>
     </div>
   );
 }

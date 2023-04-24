@@ -1,0 +1,30 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.page > h1 {
+  color: white;
+  margin: 1vh auto;
+}
+
+.profileContainer {
+  width: 80vw;
+  height: 90vh;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  overflow-y: scroll;
+  border-radius: 4vh;
+}
+
+.profileContainer::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+.profileContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0);
+  border-radius: 0.5rem;
+  height: 80vh;
+}

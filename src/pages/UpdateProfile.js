@@ -53,6 +53,7 @@ export default function UpdateProfile() {
     setUploadData(minified);
   };
   const uploadFile = async (myFile) => {
+    if (!myFile) return "";
     const { url } = await client.upload(myFile);
     return url;
   };

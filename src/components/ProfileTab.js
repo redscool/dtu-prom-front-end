@@ -45,48 +45,66 @@ export default function ProfileTab({ profile }) {
       <div className={styles.left}>
         <div className={styles.fieldContainer}>
           <img src="/name.png"></img>
-          <p> {name}</p>
+          <div className={styles.fieldTextWrapper}>
+            <p> {name}</p>
+          </div>
         </div>
         <div className={styles.fieldContainer}>
           <img src="/bio.png"></img>
-          <p>{bio}</p>
+          <div className={styles.fieldTextWrapper}>
+            <p>{bio}</p>
+          </div>
         </div>
         <div className={styles.fieldContainer}>
           <img src="/college.png"></img>
-          <p>{college}</p>
+          <div className={styles.fieldTextWrapper}>
+            <p>{college}</p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.middle}>
+        <div className={styles.fieldContainer}>
+          <img src="/age.png"></img>
+          <div className={styles.fieldTextWrapper}>
+            <p>{age}</p>
+          </div>
         </div>
         <div className={styles.fieldContainer}>
-          <a href={`instagram.com/${instagram}`}>
-            <img src="/insta.svg" alt="" />
-          </a>
-          <p>{instagram}</p>
+          <img src="/branch.png"></img>
+          <div className={styles.fieldTextWrapper}>
+            <p>{branch}</p>
+          </div>
         </div>
         <div className={styles.fieldContainer}>
-          <a href={linkedin}>
-            <img src="/linkedin.svg" alt="" />
-          </a>
+          <img src="/company.png"></img>
+          <div className={styles.fieldTextWrapper}>
+            <p>{company}</p>
+          </div>
         </div>
       </div>
       <div className={styles.right}>
         <div className={styles.fieldContainer}>
-          <img src="/age.png"></img>
-          <p>{age}</p>
-        </div>
-        <div className={styles.fieldContainer}>
-          <img src="/branch.png"></img>
-          <p>{branch}</p>
-        </div>
-        <div className={styles.fieldContainer}>
-          <img src="/company.png"></img>
-          <p>{company}</p>
-        </div>
-        <div className={styles.fieldContainer}>
           <img src="/location.png"></img>
-          <p>{location}</p>
+          <div className={styles.fieldTextWrapper}>
+            <p>{location}</p>
+          </div>
         </div>
         <div className={styles.fieldContainer}>
           <img src="/interest.png"></img>
-          <p>{interest}</p>
+          <div className={styles.fieldTextWrapper}>
+            <p>{interest}</p>
+          </div>
+        </div>
+        <div className={styles.fieldContainer}>
+          <a
+            href={`https://www.instagram.com/${instagram}`}
+            className={styles.instaLogo}
+          >
+            <img src="/insta.svg" alt="" />
+          </a>
+          <a href={linkedin} className={styles.linkedinLogo}>
+            <img src="/linkedin.svg" alt="" />
+          </a>
         </div>
       </div>
     </div>
